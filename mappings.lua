@@ -11,8 +11,10 @@ return {
     ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
     ["<leader>bD"] = {
       function()
-        require("astronvim.utils.status").heirline.buffer_picker(function(bufnr) require("astronvim.utils.buffer").close(
-          bufnr) end)
+        require("astronvim.utils.status").heirline.buffer_picker(function(bufnr)
+          require("astronvim.utils.buffer").close(
+            bufnr)
+        end)
       end,
       desc = "Pick to close",
     },
@@ -23,6 +25,7 @@ return {
     ["<C-s>"] = { ":w!<cr>", desc = "Save File" }, -- change description but the same command
     ["<S-Tab>"] = { ":bprev<cr>", desc = "goto previsou tab" },
     ["<Tab>"] = { ":bnext<cr>", desc = "goto next tab" },
+    ["<A-h>"] = { ":RustHoverActions<cr>", desc = "rust hover action" },
   },
   t = {
     -- setting a mapping to false will disable it

@@ -9,4 +9,16 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+  {
+    "m4xshen/hardtime.nvim",
+    event = "VeryLazy",
+    opts = {}
+  },
+  {
+    "ggandor/leap.nvim",
+    event = "VeryLazy",
+    config = function()
+      require("leap").add_default_mappings()
+    end,
+  },
 }

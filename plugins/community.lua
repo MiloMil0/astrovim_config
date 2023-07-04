@@ -14,7 +14,6 @@ return {
   { import = "astrocommunity.colorscheme.github-nvim-theme" },
   { import = "astrocommunity.colorscheme.kanagawa-nvim" },
 
-  { import = "astrocommunity.scrolling.satellite-nvim" },
   -- example of imporing a plugin, comment out to use it or add your own
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
 

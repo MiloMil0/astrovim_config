@@ -26,9 +26,16 @@ return {
     ["<S-Tab>"] = { ":bprev<cr>", desc = "goto previsou tab" },
     ["<Tab>"] = { ":bnext<cr>", desc = "goto next tab" },
     ["<A-h>"] = { ":RustHoverActions<cr>", desc = "rust hover action" },
+    ["<C-a>"] = { "<ESC>^" },
+    ["<C-e>"] = { "<ESC>$" },
   },
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
   },
+  i = {
+    ["<C-a>"] = { "<ESC>I" },
+    ["<C-e>"] = { "<ESC>A" },
+
+  }
 }

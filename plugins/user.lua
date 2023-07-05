@@ -25,6 +25,7 @@ return {
     "petertriho/nvim-scrollbar",
     event = "VeryLazy",
     config = function()
+      local colors = require("kanagawa.colors").setup()
       require("scrollbar").setup()
     end,
   }

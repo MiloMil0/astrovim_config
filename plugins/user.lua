@@ -21,4 +21,11 @@ return {
       require("leap").add_default_mappings()
     end,
   },
+  {
+    "petertriho/nvim-scrollbar",
+    event = "VeryLazy",
+    config = function()
+      require("scrollbar").setup()
+    end,
+  }
 }

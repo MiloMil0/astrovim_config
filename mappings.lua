@@ -21,6 +21,10 @@ return {
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
+    ["<leader>a"] = { name = "Colorcolumn" },
+
+    ["<leader>aa"] = { ":set colorcolumn=90<cr>", desc = "set columnwidth to 90" },
+    ["<leader>ax"] = { ":set cc=<cr>", desc = "disable colorcolumn" },
     -- quick save
     ["<C-s>"] = { ":w!<cr>", desc = "Save File" }, -- change description but the same command
     ["<S-Tab>"] = { ":bprev<cr>", desc = "goto previsou tab" },
@@ -37,5 +41,9 @@ return {
     ["<C-a>"] = { "<ESC>I" },
     ["<C-e>"] = { "<ESC>A" },
 
+  },
+  v = {
+    ["J"] = { ":m '>+1<CR>gv=gv" },
+    ["K"] = { ":m '<-2<CR>gv=gv" },
   }
 }

@@ -22,16 +22,20 @@ return {
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
     ["<leader>a"] = { name = "Colorcolumn" },
+    ["<leader>i"] = { name = "CursorPos" },
 
     ["<leader>aa"] = { ":set colorcolumn=90<cr>", desc = "set columnwidth to 90" },
     ["<leader>ax"] = { ":set cc=<cr>", desc = "disable colorcolumn" },
+
+    ["<leader>im"] = { ":set so=999<cr>", desc = "set cursor to the middle" },
+    ["<leader>id"] = { ":set so=15<cr>", desc = "set default cursor" },
+    ["<leader>iz"] = { ":ser so=0<cr>", desc = "disable cursor position" },
     -- quick save
     ["<C-s>"] = { ":w!<cr>", desc = "Save File" }, -- change description but the same command
     ["<S-Tab>"] = { ":bprev<cr>", desc = "goto previsou tab" },
     ["<Tab>"] = { ":bnext<cr>", desc = "goto next tab" },
     ["<A-h>"] = { ":RustHoverActions<cr>", desc = "rust hover action" },
     ["<C-a>"] = { "<ESC>^" },
-    ["<C-e>"] = { "<ESC>$" },
   },
   t = {
     -- setting a mapping to false will disable it

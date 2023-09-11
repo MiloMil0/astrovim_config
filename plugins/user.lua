@@ -10,11 +10,6 @@ return {
   --   end,
   -- },
   {
-    "m4xshen/hardtime.nvim",
-    event = "VeryLazy",
-    opts = {}
-  },
-  {
     "ggandor/leap.nvim",
     event = "VeryLazy",
     config = function()
@@ -38,5 +33,5 @@ return {
         -- Configuration here, or leave empty to use defaults
       })
     end
-  }
+  },
 }
